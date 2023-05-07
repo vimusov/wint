@@ -1,0 +1,10 @@
+[Unit]
+Description=An utility which waits for Internet connection being established
+After=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/wint
+
+[Install]
+WantedBy=multi-user.target
